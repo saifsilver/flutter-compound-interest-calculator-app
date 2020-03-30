@@ -8,13 +8,13 @@ class NumberTextFormField extends StatelessWidget {
   final String suffixTxt;
   final Function onChangeFunc;
 
-  const NumberTextFormField(
-      this.hintTxt,
-      this.helperTxt,
-      this.labelTxt,
-      this.suffixTxt,
-      this.onChangeFunc
-      ) : super();
+  const NumberTextFormField({
+    this.hintTxt,
+    this.helperTxt,
+    this.labelTxt,
+    this.suffixTxt,
+    this.onChangeFunc
+  }) : super();
 
   @override
   Widget build(BuildContext context) {

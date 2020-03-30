@@ -27,26 +27,33 @@ class _CompoundInterestCalcState extends State<CompoundInterestCalc> {
           child: ListView(
             children: <Widget>[
               NumberTextFormField(
-                  '100000', 'You can enter any amount',
-                  'Principal Amount (P)', 'Rupees', setPrincipal),
+                  hintTxt:'100000',
+                  helperTxt:'You can enter any amount',
+                  labelTxt: 'Principal Amount (P)',
+                  suffixTxt:'Rupees',
+                  onChangeFunc:setPrincipal
+              ),
               NumberTextFormField(
-                  '10',
-                  'You can enter percentage value e.g. 10',
-                  'Annual Rate (r)',
-                  '%',
-                  setAnnualRate),
+                  hintTxt:'10',
+                  helperTxt:'You can enter percentage value e.g. 10',
+                  labelTxt: 'Annual Rate (r)',
+                  suffixTxt:'%',
+                  onChangeFunc:setAnnualRate
+              ),
               NumberTextFormField(
-                  '1',
-                  'You can enter how many times the interest get credited in a year',
-                  'Compounds per year (n)',
-                  'Times',
-                  setCompoundPerYear),
+                  hintTxt:'1',
+                  helperTxt:'You can enter how many times the interest get credited in a year',
+                  labelTxt: 'Compounds per year (n)',
+                  suffixTxt:'Times',
+                  onChangeFunc:setCompoundPerYear
+              ),
               NumberTextFormField(
-                  '5',
-                  'You can enter no of years you planning to invest',
-                  'Years (t)',
-                  'Years',
-                  setTerms),
+                  hintTxt:'5',
+                  helperTxt:'You can enter no of years you planning to invest',
+                  labelTxt: 'Years (t)',
+                  suffixTxt:'Years',
+                  onChangeFunc:setTerms
+              ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(8.0, 30.0, 8.0, 15.0),
                 child: Text(
