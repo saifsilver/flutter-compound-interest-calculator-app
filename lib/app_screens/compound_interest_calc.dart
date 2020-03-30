@@ -28,7 +28,7 @@ class _CompoundInterestCalcState extends State<CompoundInterestCalc> {
             children: <Widget>[
               NumberTextFormField(
                   hintTxt:'100000',
-                  helperTxt:'You can enter any amount',
+                  helperTxt:'You can enter any amount e.g. 100000',
                   labelTxt: 'Principal Amount (P)',
                   suffixTxt:'Rupees',
                   onChangeFunc:setPrincipal
